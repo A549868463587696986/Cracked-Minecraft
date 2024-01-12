@@ -1,11 +1,5 @@
-import psutil
 import os
 import subprocess
-import time
-
-
-
-
 tag = r"""
 ------------------------------------
               _                  _   
@@ -17,6 +11,16 @@ tag = r"""
                                      
 -------------------------------------    
 """
+print(tag)
+print("Installing necessary libraries")
+command = "pip install psutil"
+print()
+subprocess.run(command, shell=True, check=True)
+import time
+import psutil
+
+
+
 
 
 info = r"""
